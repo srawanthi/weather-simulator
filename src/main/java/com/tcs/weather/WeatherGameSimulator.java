@@ -62,11 +62,11 @@ public class WeatherGameSimulator {
 				weatherhistoricalyearwisedataPath, city, country, datewithtime);
 
 		System.out.println(
-				 "city "+ objWeatherDataDto.getLocation()+" position " + objWeatherDataDto.getPosition().replace(WeatherConstants.COLUMN_SEPERATOR,",")+
-				" Locationtimeutc " +objWeatherDataDto.getLocaltime()+"temparature " + objWeatherDataDto.getTemparature()
-				+ "  humidity " + objWeatherDataDto.getHumidity()
-				+ " pressure " + objWeatherDataDto.getPressure()
-				+ " conditions " + objWeatherDataDto.getConditions()
+				 "City: "+ objWeatherDataDto.getLocation()+" Position " + objWeatherDataDto.getPosition().replace(WeatherConstants.COLUMN_SEPERATOR,",")+
+				" Locationtime: " +objWeatherDataDto.getLocaltime()+" temparature " + objWeatherDataDto.getTemparature()
+				+ "  Humidity: " + objWeatherDataDto.getHumidity()
+				+ " Pressure: " + objWeatherDataDto.getPressure()
+				+ " Conditions: " + objWeatherDataDto.getConditions()
 				);
 		return true;
 	}
