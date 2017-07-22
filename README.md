@@ -14,6 +14,6 @@ World wide cities coordinator information file path :
 
 Note:
 1. Here I took 2 files to predict the weather
-       - World_Cities_Coordinators.txt --> contains world wide cities latitude and longitude
+       - World_Cities_Coordinators.txt --> contains world wide cities latitude and longitude information
        - threelocations_365days_hystoricaldata.txt -->  Hyderabad, Sydney, Los Angeles locations positions and 365 days hystorical weather data loaded
 2. Input to the Program as <city> <country> <datetime> <worldcitiesfilepath> <hystoricalweatherdatafilepath> 
