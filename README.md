@@ -34,13 +34,18 @@ Weather Simulator predicts weather data by using two techniques
 
 This module calculates the average or mean value for each weather measurement (temperature, pressure and humidity) by using above two techniques.
 
-### Weather Predictor Class
+### Design Architecture
+Class Diagram mentioned in [Weather Data Simulation Design Document](https://github.com/srawanthi/weather-simulator/tree/master/doc)
 WeatherDataPredictor class is mainly used to predict weather factors. It contains
   - predictYearWiseWeatherData ()
   - mapWeatherData()
   - predictlonglat()
   - lookupinHistoryYearData()
   - lookupinFutureYearData()
+
+Constructs HashMap<String, HashMap<String, HashMap<String, HashMap<String, WeatherHistoryDataDto>>>> as HashMap<longlat,HashMap<year,HashMap<month,HashMap<day, WeatherHistoryDataDto>>>>
+
+WeatherHistoryDataDto class contains all fields related to weather historical data.
 
 ### Input Arguments
 Input as city, country as city, country,  datewithtime,  worldcitiescoordinatorslistpath,  weatherhistoricalyearwisedataPath
